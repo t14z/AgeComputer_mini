@@ -1,0 +1,45 @@
+/* pages/camera/index.wxss */
+
+.container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  padding:15rpx;
+}
+
+.loadding{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  color: #fff;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 35rpx;
+  background: #e84e40;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+}
+
+.button:active {
+  background: #e51323;
+}
+ 
+.creator{
+  position: absolute;
+  top: -99999rpx;
+  left: -99999rpx;
+}

@@ -1,0 +1,17 @@
+<!--pages/index/void/index.wxml-->
+<view style='padding:30rpx'>
+  <view>
+    <text class='globle_text_big' style='color: #e84e40;'>周岁算法：</text>
+  </view>
+  <view>
+    <text class='globle_text'>每过一个生日就长一岁。</text>
+  </view>
+  <view style='height:30rpx;'></view>
+
+  <view>
+    <text class='globle_text_big' style='color: #e84e40;'>虚岁算法：</text>
+  </view>
+  <view>
+    <text class='globle_text'>一出生就是一岁，然后，每过一个春节就长一岁。</text>
+  </view>
+</view>

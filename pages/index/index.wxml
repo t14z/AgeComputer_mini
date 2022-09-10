@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <view style='height:255.5rpx' animation="{{heightAnima}}"></view>
+  <view animation="{{selectionAnima}}" class="selection">
+    <text class="globle_text" animation="{{pickerNameAnima}}">请选择出生日期:</text>
+    <view animation="{{pickerValueAnima}}" style='text-align:center'>
+      <picker mode="date" value="{{date}}" start="1890-01-01" end="2030-01-01" bindchange="bindDateChange">
+        <view class="globle_text picker_text">{{date}}</view>
+      </picker>
+      <view animation="{{lineAnimate}}" style='background:#777;height:1rpx; width:280rpx'></view>
+    </view>
+    <text class="button" animation="{{buttonAnima}}" bindtap='compute'>计算</text>
+  </view>
+
+  <view id="result" animation="{{opacityAnima}}">
+    <view class="first_item">
+      <view class="column">
+        <text class="key">周数:</text>
+        <text class="value">{{realAge}}</text>
+        <text class="key">岁</text>
+        <image bindtap='toReal' src='/image/home/question.png'></image>
+      </view>
+      <view class="column">
+        <text class="key">虚岁:</text>
+        <text class="value">{{voidAge}}</text>
+        <text class="key">岁</text>
+        <image bindtap='toVoid' src='/image/home/question.png'></image>
+      </view>
+    </view>
+    <view class="item">
+      <text class="key">生肖:<text class="value">{{zodiacYear}}</text></text>
+    </view>
+    <view class="item">
+      <text class="key">农历生日:<text class="value">{{lunarBirthday}}</text></text>
+    </view>
+    <view class="item">
+      <text class="key">离公历生日还有几天:<text class="value">{{realBirthDvalue}}</text>天</text>
+    </view>
+    <view class="item">
+      <text class="key">离农历生日还有几天:<text class="value">{{voidBirthDvalue}}</text>天</text>
+    </view>
+    <view class="item">
+      <text class="key">您在这个世界上生活了:<text class="value">{{liftTime}}</text>天</text>
+    </view>
+    <view class="item">
+      <text class="key">离春节还有几天:<text class="value">{{voidNewYearDvalue}}</text>天</text>
+    </view>
+  </view>
+
+  <image class="money" bindtap='reward' mode='widthFix' src="/image/home/pg.png"></image>
+
+  <ad class=".ad" unit-id="adunit-8cb739af50f7efc3"></ad>
+</view>

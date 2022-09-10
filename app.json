@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/question/index",
+    "pages/camera/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e84e40",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "年龄岁数计算器"
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}

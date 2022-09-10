@@ -1,0 +1,16 @@
+<!--pages/camera/index.wxml-->
+<view class="container">
+  <canvas canvas-id='creator' class="creator" style="width:{{imageWidth}}px;height:{{imageHeight}}px">
+  </canvas>
+  <view wx:if="{{state == 'show'}}">
+    <canvas canvas-id='canvas' class="canvas" style="width:{{canvasWidth}}px;height:{{canvasHeight}}px">
+    </canvas>
+  </view>
+  <text wx:if="{{msg}}" style="padding:15rpx">
+    {{msg}}
+  </text>  
+  <view style="margin-top: 30rpx;">
+  <text class="button" bindtap='chooseImage'>拍照/相册选择</text>
+  <text wx:if="{{state == 'show'}}" class="button" bindtap='saveImage'>保存图片</text>
+  </view>
+</view>

@@ -1,0 +1,165 @@
+.globle_text_huge {
+  font-size: 70rpx;
+}
+
+.globle_text_large {
+  font-size: 60rpx;
+}
+
+.globle_text_big {
+  font-size: 50rpx;
+}
+
+.globle_text {
+  font-size: 40rpx;
+}
+
+.globle_text_small {
+  font-size: 30rpx;
+}
+
+text {
+  font-size: 40rpx;
+  color: #333;
+}
+ 
+.line{
+  height: 2rpx;
+  background-color: #eee;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+.text_color_white {
+  color: #fff;
+}
+
+.text_color_black {
+  color: #333;
+}
+
+.text_color_grey {
+  color: #777;
+}
+
+.text_color_orange {
+  color: #ff9800;
+}
+
+.text_color_red {
+  color: #f36c60;
+}
+
+
+
+/* Loadding View Animation */
+
+.lv_container {
+  padding: 3rpx;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.lv_point {
+  height: 20rpx;
+  width: 20rpx;
+  margin: 10rpx;
+  background: #f44336;
+  border-radius: 15rpx;
+  animation-duration: 2s;
+  animation-name: lv_point;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.lv_point1 {
+  animation-delay: 0s;
+}
+
+.lv_point2 {
+  animation-delay: 0.5s;
+  opacity: 0.2;
+}
+
+.lv_point3 {
+  animation-delay: 1s;
+  opacity: 0.2;
+}
+
+@keyframes lv_point {
+  0% {
+    opacity: 0.2;
+  }
+
+  13.3% {
+    opacity: 0.2;
+  }
+
+  33.3% {
+    opacity: 1;
+  }
+
+  53.3% {
+    opacity: 0.2;
+  }
+
+  66.6% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/* Loadding View Animation */
+
+
+/* error view */
+
+.ev_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ev_container .button {
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  margin-top: 20rpx;
+  border-style: solid;
+  border-radius: 13rpx;
+  border-width: 2rpx;
+  border-color: #ff9800;
+}
+
+.ev_container .button:active {
+  color: #ef6c00;
+  border-color: #ef6c00;
+}
+
+/* error view */

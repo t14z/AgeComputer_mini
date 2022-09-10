@@ -1,0 +1,100 @@
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+picker {
+  margin-top: 30rpx;
+}
+
+.button {
+  margin-top: 30rpx;
+  width: 55%;
+  color: #fff;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 35rpx;
+  background: #e84e40;
+}
+
+.button:active {
+  background: #e51323;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  transform: scale(1, 0.4);
+  opacity: 0;
+}
+
+#result .item, .first_item {
+  padding-bottom: 25rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.first_item .column {
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.first_item image {
+  width: 40rpx;
+  height: 40rpx;
+  align-self: center;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+
+.first_item .key {
+  flex-grow: 0;
+}
+
+.first_item .value {
+  flex-grow: 0;
+}
+
+#result .key {
+  color: #777;
+  font-size: 35rpx;
+}
+
+#result .value {
+  color: #e84e40;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  font-size: 50rpx;
+}
+
+.money {
+  position: absolute;
+  width: 109rpx;
+  right: 15rpx;
+  bottom: 67rpx;
+  display: none;
+}
+
+.ad {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
