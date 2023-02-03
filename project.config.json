@@ -34,7 +34,7 @@
     "minifyWXML": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.5.0",
+  "libVersion": "2.30.0",
   "appid": "wx481469eaf6945f99",
   "projectname": "%E5%B9%B4%E9%BE%84%E5%B2%81%E6%95%B0%E8%AE%A1%E7%AE%97%E5%99%A8",
   "simulatorType": "wechat",
